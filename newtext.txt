@@ -1,0 +1,11 @@
+#s="vinayak143"
+s=input("enter any alphanumeric to sort")
+ah=[]
+dg=[]
+for ch in s:
+    if ch.isalpha():
+        ah.append(ch)
+    else:
+        dg.append(ch)
+        
+print(''.join((sorted(ah)+sorted(dg))))
