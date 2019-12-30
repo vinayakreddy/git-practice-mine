@@ -1,5 +1,8 @@
+Input = vinayak143
+Output = aaiknvy134
+
 #s="vinayak143"
-s=input("enter any alphanumeric to sort")
+s=input("enter any alphanumeric to sort by characters and numbers")
 ah=[]
 dg=[]
 for ch in s:
@@ -9,3 +12,56 @@ for ch in s:
         dg.append(ch)
         
 print(''.join((sorted(ah)+sorted(dg))))
+
+
+#s="vinayak143"
+s=input("enter any alphanumeric to sort")
+ah=''
+dg=''
+for ch in s:
+    if ch.isalpha():
+        ah+=ch
+    else:
+        dg+=ch
+        
+output=''
+for ch in sorted(ah):
+    output+=ch
+for ch in sorted(dg):
+    output+=ch
+    
+print(output)
+
+-----------------------------------------------------------------------------
+
+Input=a5b4c3d2e1
+Output = aaaaabbbbcccdde
+
+s=input("Enter some string where alphabet symbol should be follwed by digit: ")
+output=''
+for ch in s:
+    if ch.isalpha():
+        x=ch
+    else:
+        output += x*int(ch)
+print(output)
+
+-----------------------------------------------------------------------------
+
+Input=v3d2k4b1
+Output = bddkkkkvvv(sorted order)
+
+s=input("Enter some string where alphabet symbol should be follwed by digit: ")
+output=''
+for ch in s:
+    if ch.isalpha():
+        x=ch
+    else:
+        output += x*int(ch)
+print(''.join(sorted(output)))
+
+
+-----------------------------------------------------------------------------
+
+Input = aaaaabbbbcccdde
+Output = a5b4c3d2e1
